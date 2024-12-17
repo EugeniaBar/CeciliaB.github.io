@@ -1,0 +1,459 @@
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+
+  
+ /*Home*/
+  #home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  #home .col-md-8 {
+    flex: 1;
+  }
+  
+  #home .col-md-4 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*resto*/
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+/*barra de menu color*/
+.navbar {
+  background-color: #393a3b4d;
+}
+.nav-link {
+  font-size: 18px;
+  position: relative;
+  display: inline-block;
+}
+
+
+
+.nav-link::before {
+  transition: 300ms;
+  height: 3px;
+  content: "";
+  position: absolute;
+  border-radius: 5px;
+  background-color: #087075;
+}
+
+.nav-hover::before {
+  width: 0%;
+  bottom: 100px;
+}
+
+.nav-hover:hover::before {
+  width: 70%;
+}
+
+
+
+body {
+    background-color: rgb(206, 22, 22);
+  background-image: url("https://img.freepik.com/free-photo/blue-toned-collection-paper-sheets-with-copy-space_23-2148320445.jpg?w=900&t=st=1709066598~exp=1709067198~hmac=c5c0995a7289d90e1e59f33310d419716d3975cedc8f97a8f31c119f7619dcaf");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar-track {
+  border-radius: 30px;
+}
+
+
+
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #66dce2;
+}
+
+body {
+ 
+  
+  font-family: "Fira Sans", sans-serif;
+}
+
+#home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#home a {
+  color: rgb(37, 35, 35);
+}
+#home p {
+  font-size: 25px;
+}
+#home i {
+  cursor: pointer;
+  transition: 0.5s;
+}
+#home i:hover {
+  color: rgb(201, 98, 91);
+}
+#scrollBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+#skills i {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(117, 89, 89);
+  border-radius: 5px;
+  box-shadow: #f1f1f1fa 0px 3px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#skills i:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+#projects .col-lg-4 {
+  padding: 20px;
+}
+#projects .card {
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 10px auto;
+  cursor: pointer;
+  position: relative;
+  color: white;
+}
+#projects .card-body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  display: none;
+}
+#projects .card:hover .card-body {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#education .education {
+  cursor: pointer;
+  box-shadow: rgba(228, 40, 40, 0.24) 0px 3px 8px;
+  background-color: rgba(46, 223, 193, 0.5);
+}
+#education .education:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  #home img {
+    margin-bottom: 30px;
+    width: 200px;
+  }
+  #home .col-md-8 {
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+  }
+  #home p {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+@media (max-width: 370px) {
+  #home h1 {
+    font-size: 25px;
+  }
+}
+/* c0ntenedor transparente*/
+}
+.product-container {
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+section.product-container h2 {
+  color: #fff;
+  font-size: 1.3em;
+}
+section.product-container h2::first-letter {
+  font-size: 1.5em;
+}
+
+section.product-container p {
+  font-size: 14px;
+}
+
+.product-container .product {
+  width: 70%;
+  height: auto;
+}
+
+.scroll-progress {
+  height: 40px;
+  width: 40px;
+  font-size: 15px;
+  margin-right: 10px;
+}
+/* ------- section one end --------- */
+/* Importing Google font - Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background: rgb(148, 32, 76);
+}
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 100% ;
+    margin: 150px auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card-list .card-item {
+    padding: 26px;
+    background: linear-gradient( to right top, #944c90be , #fdf4f43b);
+    border-radius: 8px;
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    border: 4px solid transparent;
+    transition: border 0.5s ease;
+}
+.card-list .card-item:hover {
+    border: 2px solid #7d7e80;
+}
+.card-list .card-item img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: all 0.3s ;
+    filter: blur(1.0px);
+}
+.card-list span {
+  display: flex; /* Alinea las tarjetas horizontalmente */
+    margin-top: 32px;
+    margin-left : 0px;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 0.75rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    background: rgba(88, 65, 85, 0.795);
+    font-size: 1.2em;
+    color: #000000;
+    text-transform: uppercase;
+    text-shadow: 0 2px 2px #000;
+}
+
+.card-item h3 {
+    color: #111010;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 28px;
+    font-weight: 600;
+}
+
+.card-item .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    color: #000000;
+    border: 1px solid #000;
+    border-radius: 90%;
+    float: right;
+    margin-top: 40px;
+    transition: 0.2s ease;
+}
+
+.card-list .card-item:hover .arrow  {
+    background: rgb(102, 211, 108);
+    color: #000000; 
+}
+.card-item img:hover{
+    transform: scale(1.05);
+    filter: blur(0);
+}
+@media (max-width: 1200px) {
+    .card-list .card-item {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .card-list {
+        margin: 0 auto;
+        display: flex; /* Alinea las tarjetas horizontalmente */
+
+    }
+}
+
+/*typed text en titulo */
+#typed-text {
+  font-weight: bold;
+  color: #193c9b; /* Azul */
+  transition: color 0.3s ease-in-out;
+}
+
+#typed-text:hover {
+  color: #ff5722; /* Naranja */
+}
+ 
+
+
+
+/* Reseteo de márgenes y padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Asegurar que el body ocupe toda la pantalla */
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  display: block; /* Asegura que el body se comporta como bloque */
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  color: #050505;
+  margin-bottom: 20px;
+}
+
+                 /* Estilo exclusivo para las tarjetas de la sección Education */
+.educationcard {
+  box-shadow: 0 10px 40px rgb(13, 137, 194);
+  transition: box-shadow 0.3s ease;
+  border-radius: 8px; /* Opcional: añade bordes redondeados */
+  overflow: hidden;   /* Opcional: asegura que las imágenes se mantengan dentro de los bordes */
+}
+/* Contenedor principal con posición relativa */
+.educationcard {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Imagen */
+.educationcard img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Efecto de zoom en la imagen al pasar el mouse */
+.educationcard:hover img {
+  transform: scale(1.1);
+}
+
+
+
+
+
+                         /* Contenedor del formulario */
+form {
+  background-color: #6b5656a1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgb(3, 0, 0);
+  width: 100%; /* El formulario ocupa todo el ancho disponible */
+  max-width: 600px; /* Limita el ancho máximo del formulario */
+  margin: 20px auto; /* Centra el formulario en la pantalla */
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+/* Estilos para las etiquetas */
+label {
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Estilos para los campos de texto */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%; /* Los campos ocupan todo el ancho disponible */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  font-size: 14px;
+  display: block;
+}
+
+/* Estilo del textarea */
+textarea {
+  resize: vertical; /* Permite redimensionar el área de texto verticalmente */
+  min-height: 100px;
+}
+
+                               /* Estilo del botónes */
+
+button {
+  width: 100%; 
+  padding: 10px;
+  background-color: #9eb69e;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+button:hover {
+  background-color: #72df5c;
+}
+
+/* Evitar desbordamiento en pantallas pequeñas */
+body {
+  overflow-x: hidden; /* Evita el desbordamiento horizontal */
+  display: block;
+}
+
